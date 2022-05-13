@@ -1,0 +1,40 @@
+bod{
+    color: #4e4e4e;
+}
+p{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.title-left{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.title-left::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -10px;
+    left: 0px;
+
+}
+
+
+/*about*/
+ul{
+ list-style: none;
+}
+.w-85{
+    width: 85%;
+}
+.w-90{
+    width: 90%;
+}
+.bg-skill{
+    background-color: #cde1f8;
+}
+.my-p{
+    padding: 0.4rem;
+}
