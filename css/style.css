@@ -1,0 +1,230 @@
+/* navigation bar */
+*{
+    box-sizing: border-box;
+}
+body{
+  background-color: #f5f5f5;
+  margin: 0;
+  overflow-x: hidden;
+}
+/* .container{
+    background-color: rgba(0,0,0, .1);
+    margin: 0;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px;
+} */
+.navbar{
+    background-color: rgba(0,0,0,.1);
+    z-index: 999999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.container{
+  width: 100%;
+}
+.container .navbar-brand{
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+}
+.navbar .container .color{
+    color: black !important;
+}
+.container .collapse a{
+    font-weight: 600;
+    color: white !important;
+    margin-left: 10px;
+}
+.container .collapse a::after{
+    content: '';
+    position: absolute;
+    left: 7px;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+}
+.container .collapse a:hover:after{
+    width: 70%;
+}
+/* welcome section  */
+.welcome{
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.welcome h2{
+    color: white;
+    font-size: 72px;
+    font-weight: 600px;
+    position: relative;
+}
+.item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+/* animation */
+/* .wrapper{
+    display: flex;
+  } */
+  .contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contain ul{
+    position: relative;
+    bottom: 0;
+}
+.contain .list-item{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    height: 50px;
+    width: 0px;
+    padding: 0%;
+    border-right: 1px white solid;
+    overflow: hidden;
+    animation: slide 3s infinite;
+    animation-direction: alternate;
+}
+.contain .list-item li{
+    list-style: none;
+}
+@keyframes slide{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 150px;
+    }
+}
+
+  @media screen and (max-width:576px){
+    .welcome h2{
+      font-size: 25px;
+    }
+    .dynamic-txts li{
+      font-size: 25px;
+    }
+    .contain .list-item{
+      font-size: 20px;
+      height: 30px;
+    }
+  }
+  @media screen and (min-width:576px) and (max-width:768px){
+    .welcome h2{
+      font-size: 30px;
+    }
+    .dynamic-txts li{
+      font-size: 30px;
+    }
+    .contain .list-item{
+      font-size: 30px;
+      height: 40px;
+    }
+  }
+  @media screen and (min-width:768px) and (max-width:992px){
+    .welcome h2{
+      font-size: 35px;
+    }
+    .dynamic-txts li{
+      font-size: 35px;
+    }
+    .contain .list-item{
+      font-size: 30px;
+      height: 40px;
+    }
+  }
+  /* animation end */
+/* nav bar and welcome section end */
+.about-section .progress-bar{
+  background-color: #0078ff !important;
+}
+.about-section .my-progress{
+  height: 10px;
+}
+.about-section .about-us .h2{
+  position: relative;
+}
+.about-section .about-us .h2::after{
+  content: '';
+  height: 5px;
+  width: 100px;
+  background-color: #0078ff;
+  position: absolute;
+  bottom: -10;
+  left: 0;
+}
+@media screen and (max-width:576px){
+  .about-section .container .w-50{
+    width: 100% !important;
+  }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+  .about-section .container .w-50{
+    width: 100% !important;
+  }
+}
+/* home section end */
+/* about section */
+bod{
+  color: #4e4e4e;
+}
+p{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.title-left{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  
+}
+.title-left::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -10px;
+  left: 0px;
+
+}
+
+
+/*about*/
+ul{
+list-style: none;
+}
+.w-85{
+  width: 85%;
+}
+.w-90{
+  width: 90%;
+}
+.bg-skill{
+  background-color: #cde1f8;
+}
+.my-p{
+  padding: 0.4rem;
+}
